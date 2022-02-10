@@ -16,11 +16,11 @@ public class Chapter08 {
 		}
 		
 //		拡張for文
-		for (int val : array) {
-			if (val % 2 == 0) {
+		for (int num : array) {
+			if (num % 2 == 0) {
 				continue;
 			} 
-			System.out.println(val);
+			System.out.println(num);
 		}
 	}
 }
