@@ -1,6 +1,6 @@
 package extend.human;
 
-public class Employee {
+public class Employee extends Human {
 	private String department;
 	
 	public Employee(String name, int age, String department) {
