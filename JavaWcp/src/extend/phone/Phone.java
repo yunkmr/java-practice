@@ -9,5 +9,4 @@ public interface Phone {
     default void powerOff() {
         System.out.println("電源を切ります。");
     }
-	
 }

@@ -14,5 +14,4 @@ public class MobilePhone implements Phone, Camera {
 	public void call(String number) {
 		System.out.println(this.number + " から " + number + " に電話をかけます。");
 	}
-	
 }
