@@ -9,21 +9,24 @@ public class Cleric {
 	int mp = 10;
 	final int MAX_MP = 10;
 	
-	public void selfAid() {
-		mp -= 5;
+	void selfAid() {
+		System.out.println(this.name + "はセルフエイドを唱えた！");
 		hp = MAX_HP;
+		this.mp -= 5;
+		System.out.println("HPが最大まで回復した。");
 	}
 	
-	public int pray(int sec) {
+	int pray(int sec) {
+		System.out.println(this.name + "は" + sec + "秒間天に祈った！");
+		
 	    Random rand = new Random();
-	    int num = rand.nextInt(3) + sec;
+	    int recover = rand.nextInt(3) + sec;
+	    int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
 	    
-	    mp = mp + num;
+	    mp += recoverActual;
 	    		
-	    if (mp > MAX_MP) {
-	    	mp = MAX_MP;
-	    }
+	    System.out.println("MPが" + recoverActual + "回復した");
 	    
-	    return mp;
+	    return recoverActual;
 	}
 }
