@@ -9,6 +9,9 @@ public class Wand {
 	}
 	
 	public void setName(String name) {
+		if (name == null || name.length() < 3) {
+			throw new IllegalArgumentException("杖の名前が正しくありません");
+		}
 		this.name = name;
 	}
 	
@@ -17,6 +20,9 @@ public class Wand {
 	}
 	
 	public void setPower(double power) {
+		if (power < 0.5 || power > 100.0) {
+			throw new IllegalArgumentException("杖の魔力が正しくありません");
+		}
 		this.power = power;
 	}
 	
