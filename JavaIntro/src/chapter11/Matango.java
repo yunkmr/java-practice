@@ -9,8 +9,8 @@ public class Matango {
 	}
 	
 	public void attack(Hero h) {
-		System.out.println("" + this.suffix + "");
-		System.out.println("" + this.suffix + "");
+		System.out.println("キノコ" + this.suffix + "の攻撃");
+		System.out.println("10のダメージ");
 		h.setHp(h.getHp() -10);
 	}
 }
