@@ -5,5 +5,8 @@ public class chapter01 {
 		Human human = new Human();
 		Human.HumanLeg humanleg = human.new HumanLeg();
 		humanleg.kick();
+		
+//		一行に略
+		new Human().new HumanLeg().kick();
 	}
 }
