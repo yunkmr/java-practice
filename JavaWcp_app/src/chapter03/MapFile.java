@@ -1,9 +1,10 @@
 package chapter03;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
 
-public class Map {
+public class MapFile {
 	public static void main(String[] args) {
 		// HashMapを生成する場合
 		Map<Integer, String> map1 = new HashMap<Integer, String>();
@@ -30,12 +31,12 @@ public class Map {
 		
 		map1.size();
 		
-//		// キーを指定して要素を削除する
-//		map1.remove(0);
-//		map1.remove(1);
-//
-//		// キーと値を指定して要素を削除する
-//		map1.remove(3, "もも");
-//		map1.remove(3, "なし");
+		// キーを指定して要素を削除する
+		map1.remove(0);
+		map1.remove(1);
+
+		// キーと値を指定して要素を削除する
+		map1.remove(3, "もも");
+		map1.remove(3, "なし");
 	}
 }

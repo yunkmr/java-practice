@@ -2,8 +2,9 @@ package chapter03;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.Set;
 
-public class Set {
+public class SetFile {
 	public static void main(String[] args) {
 		// HashSetを生成する場合
 		Set<String> set1 = new HashSet<String>();
