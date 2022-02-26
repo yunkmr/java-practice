@@ -15,7 +15,7 @@ public class Wand {
 		this.name = name;
 	}
 	
-	public double getPower() {
+	double getPower() {
 		return this.power;
 	}
 	
