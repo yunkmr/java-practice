@@ -2,7 +2,7 @@ package chapter10;
 
 public class Wand {
 	private String name;
-	private double power;
+	double power;
 	
 	public String getName() {
 		return this.name;
