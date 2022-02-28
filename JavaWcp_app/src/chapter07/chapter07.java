@@ -1,10 +1,12 @@
 package chapter07;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class chapter07 {
 	public static void main(String[] args) {
+		Collection<Fruit> fruits = null;
 		long count = fruits.stream()
 			.filter(f -> f.quantity <= 10)
 			.count();
