@@ -1,6 +1,6 @@
 package chapter1;
 
-public class Calc {
+public class Calc1 {
 	public static void main(String[] args) {
 		int data[] = {32, 27, 80, 120, 76, 18, 212, 320, 53, 44, 61, 420};
 		
