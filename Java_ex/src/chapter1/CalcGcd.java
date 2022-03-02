@@ -22,14 +22,13 @@ public class CalcGcd {
 					b = m;
 				}
 				
-				r = a % b;
-				while (r != 0) {
+				do {
+					r = a % b;
 					a = b;
 					b = r;
-					r = a % b;
-				}
+				} while (r != 0);
 				
-				System.out.println(m + " と " + n + " 最大公約数は " + b + " です。");
+				System.out.println(m + " と " + n + " 最大公約数は " + a + " です。");
 				
 			} catch( NumberFormatException e) {
 				System.out.println("引数には整数を指定してください。");
