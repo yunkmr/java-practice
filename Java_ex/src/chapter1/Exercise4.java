@@ -1,6 +1,6 @@
 package chapter1;
 
-public class Total {
+public class Exercise4 {
 	public static void main(String[] args) {
 		int m;
 		int n;
